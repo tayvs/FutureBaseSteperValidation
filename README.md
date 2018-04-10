@@ -6,7 +6,7 @@ Made Async and easier for understanding then it brother (https://github.com/tayv
 Base validation entity (chain) is Validator class, that provide interface for step validation
 
 
-###Implemented two APIs:
+### Implemented two APIs:
 
 I used simple Campaign class and here it signature:
 case class Campaign(one: Option[String] = None, two: Option[String] = None, three: Option[String] = None)
