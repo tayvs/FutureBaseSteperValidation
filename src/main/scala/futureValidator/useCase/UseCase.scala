@@ -18,7 +18,7 @@ object UseCase extends App {
   
   def validate(cmp: Campaign): Future[Campaign] = {
     val res: Future[Campaign] = for {
-      oneAcc <- OneValidator.validateStep(cmp, Campaign()).andThen { case any => println(s"oneACC $any") }
+      oneAcc <- OneValidator.validateStep(cmp).andThen { case any => println(s"oneACC $any") }
       twoAcc <- SecondValidator.validateStep(cmp, oneAcc).andThen { case any => println(s"twoACC $any") }
       threeAcc <- ThirdValidator.validateStep(cmp, twoAcc).andThen { case any => println(s"threeACC $any") }
     } yield threeAcc
