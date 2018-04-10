@@ -11,7 +11,7 @@ Base validation entity (chain) is Validator class, that provide interface for st
 I used simple Campaign class and here it signature:
 case class Campaign(one: Option[String] = None, two: Option[String] = None, three: Option[String] = None)
 
-####First, due FutureValidationHelper class and for-comprehension:
+#### first, due FutureValidationHelper class and for-comprehension:
 
     def validate(cmp: Campaign): Future[Campaign] = {
         val res: Future[Campaign] = for {
@@ -45,7 +45,7 @@ FutureValidationStepperConstructor is a implicit constructor for DSL because it 
 
 This project is under construct and would has some improving, tests, better documentation.
 
-####Future improvements:
+#### Future improvements:
 - test (and with dependencies implementations of Validator)
 - add for-comprehension to dsl api 
 - add information about validation step into Exception-Marks
