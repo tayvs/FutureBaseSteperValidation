@@ -55,5 +55,5 @@ This project is under construct and would has some improving, tests, better docu
 
 leave feedback and advices for improving
 
-P.S. it's my first try to write description of my outer library\n 
+P.S. it's my first try to write description of my outer library
 P.P.S. visit "elder brother" of this module by this link https://github.com/tayvs/ValidationMonad
